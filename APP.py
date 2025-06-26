@@ -18,7 +18,8 @@ city=['Bangalore', 'Chandigarh', 'Delhi', 'Mumbai', 'Kolkata', 'Jaipur',
        'Kochi', 'Indore', 'Visakhapatnam', 'Pune', 'Raipur', 'Ranchi',
        'Abu Dhabi','Rajkot', 'Kanpur', 'Bengaluru', 'Dubai',
        'Sharjah', 'Navi Mumbai', 'Lucknow', 'Guwahati', 'Mohali']
-pipe = pickle.load(open('pipes.pkl', 'rb'))
+with open('pipes1.pkl','rb') as f:
+    pipe= pickle.load(f)
 st.title('Cricket Win Predictor')
 col1, col2 = st.columns(2)
 with col1:
